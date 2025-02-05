@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('R.jpg') no-repeat center center/cover;
+    color: #ffffff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(55, 114, 180, 0.9);
+}
+.navbar h1 {
+    font-size: 24px;
+    margin: 0;
+}
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+    text-align: center;
+}
+.main-content h2 {
+    font-size: 48px;
+}
+.shop-button {
+    background-color: #82CFFD;
+    color: black;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.scroll-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(55, 114, 180, 0.9);
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow:scroll;
+    overflow:auto;
+}
+.scroll-box div {
+    background-color: #82CFFD;
+    color: black;
+    padding: 20px;
+    min-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    overflow:scroll;
+    overflow:auto;
+}
