@@ -39,14 +39,15 @@ nav a:hover {
 .container {
     padding: 20px;
     text-align: center;
+    transition: transform 0.2s ease-in-out;
 }
 
-/* Contenedor de productos en una grilla intercalada */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-content: center;
+    transition: transform 0.2s ease-in-out;
 }
 
 .horizontal-row {
@@ -62,7 +63,8 @@ nav a:hover {
     border-radius: 10px;
     padding: 20px;
     min-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 4px 8px rgba(24, 34, 129, 0.377);
+    transition: transform 0.2s ease-in-out;
 }
 
 .product img {
@@ -96,4 +98,157 @@ footer {
     text-align: center;
     padding: 10px;
     width: 100%;
+    margin: 0px;
+    background: -webkit-linear-gradient(top,rgb(41, 89, 110),rgb(146, 204, 243),rgb(76, 157, 172));
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  header {
+    text-align: center;
+    background-color: #1C2833;
+    color: rgb(255, 255, 255);
+    padding: 20px 10px;
+  }
+
+  nav {
+    text-align: center;
+    padding: 10px;
+    background-color:  #85C1E9;
+  }
+
+  nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .ubicacion {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .ubicacion h2 {
+    color: #0056b3;
+  }
+
+  .eslogan {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+  }
+  .mapa {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  iframe {
+    width: 80%;
+    max-width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .contenido {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+  }
+
+  .detalles, .mision-vision {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 45%;
+    min-width: 300px;
+  }
+
+  .detalles h2, .mision-vision h2 {
+    color: #0056b3;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+  .scroll-box {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  .cubo-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    perspective: 800px;
+  }
+  
+  .scene {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+  
+  .cube {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate 10s infinite linear;
+  }
+  
+  .face {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .face img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
+  
+  .front  { transform: rotateY(  0deg) translateZ(75px); }
+  .back   { transform: rotateY(180deg) translateZ(75px); }
+  .right  { transform: rotateY( 90deg) translateZ(75px); }
+  .left   { transform: rotateY(-90deg) translateZ(75px); }
+  .top    { transform: rotateX( 90deg) translateZ(75px); }
+  .bottom { transform: rotateX(-90deg) translateZ(75px); }
+  
+  @keyframes rotate {
+    from { transform: rotateX(0deg) rotateY(0deg); }
+    to { transform: rotateX(360deg) rotateY(360deg); }
+  }
+  #header123{
+    margin: 25px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid;
+    transition: 1s ease-in-out 0s;
+}
+#header123:hover{
+    transform: rotate(5deg);
 }

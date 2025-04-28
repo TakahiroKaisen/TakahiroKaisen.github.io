@@ -1,9 +1,37 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: url('R.jpg') no-repeat center center/cover;
-    color: #ffffff;
-}
+.main-content {
+    background-image: url("Imagenes/R.jpg");
+    background-size: cover;
+    background-position: center;
+    color: rgb(116, 107, 107);
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    filter: grayscale(10px);
+  }
+  
+  .main-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px black;
+  }
+  
+  .shop-button {
+    background-color: #87CEEB; 
+    color: #000;
+    padding: 12px 20px;
+    border: none;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-button:hover {
+    background-color: #00BFFF;
+    color: #585555;
+  }
+  
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -21,7 +49,7 @@ body {
 }
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 16px;
 }
 .main-content {
@@ -64,4 +92,155 @@ body {
     border-radius: 10px;
     overflow:scroll;
     overflow:auto;
+}
+body {
+    margin: 0;
+    background-color: #D5D8DC;
+    font-family: Arial, sans-serif;
+  }
+
+  header.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5380df;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .logo-img {
+    width: 80px;
+    height: auto;
+    border: none;
+  }
+
+  h1 {
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .facebook-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .main-content {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .shop-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .container h2,
+  div > h3 {
+    text-align: center;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .product {
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 10px 4px 8px rgba(24, 34, 129, 0.377);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .product:hover {
+    transform: scale(1.03);
+  }
+
+  .product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .product h2 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+
+  .product p {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .product button {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .product button:hover {
+    background-color: #0d6efd;
+  }
+
+  iframe {
+    display: block;
+    margin: 0 auto;
+    border: none;
+  }
+
+  .scroll-box {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .scroll-box div {
+    margin-bottom: 20px;
+  }
+  .full-width-img {
+    width: 100%;
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  #borderimage{
+    border: 35px solid transparent;
+    padding: 15px;
+    text-align: center;
+    border-image: url("Imagenes/cuadros.jpg")120 round;
+  }
+  footer {
+    background-color: var(--azul-oscuro);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin: 0px;
+    background: -webkit-linear-gradient(top,rgb(41, 89, 110),rgb(146, 204, 243),rgb(76, 157, 172));
 }
