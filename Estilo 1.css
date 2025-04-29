@@ -1,5 +1,5 @@
 .main-content {
-    background-image: url("Imagenes/R.jpg");
+    background-image: url("R.jpg");
     background-size: cover;
     background-position: center;
     color: rgb(116, 107, 107);
@@ -233,7 +233,7 @@ body {
     border: 35px solid transparent;
     padding: 15px;
     text-align: center;
-    border-image: url("Imagenes/cuadros.jpg")120 round;
+    border-image: url("cuadros.jpg")120 round;
   }
   footer {
     background-color: var(--azul-oscuro);
